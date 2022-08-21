@@ -1,0 +1,110 @@
+.member-container {
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 10px;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	box-shadow: 2px 2px 10px #3f3f3f5e;
+}
+
+.member-flex {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.member-content {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.member-content img {
+	cursor: pointer;
+	border-radius: 50%;
+	width: 8vw;
+	height: 8vw;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+.member-content h2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 8vw;
+	height: 8vw;
+	margin: 0;
+	text-align: center;
+	background: #ff919e5a;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all .2s;
+}
+
+.member-content:hover h2 {
+	opacity: 100;
+}
+
+.member-content h2 a {
+	padding: 5px 10px;
+	background-color: #fff;
+	color: #070a1c;
+	border-radius: 25px;
+	font-weight: 400;
+	font-size: .5em;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.memberName {
+	margin-left: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+}
+
+.memberName a:link,
+.memberName a:active,
+.memberName a:visited {
+	color: #000;
+}
+
+.memberName a:hover {
+	color: #FF919D;
+}
+
+.memberLinks {
+	padding: 10px;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.memberLinks a:link,
+.memberLinks a:active,
+.memberLinks a:visited {
+	color: #000;
+}
+
+.memberLinks a:hover {
+	color: #FF919D;
+}
+
+.memberLinks table td:last-of-type {
+	text-align: end;
+}

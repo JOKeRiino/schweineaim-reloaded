@@ -1,38 +1,95 @@
+:root {
+	--yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+	--orange: #fca61f;
+	--black: #242d49;
+	--gray: #788097;
+	--purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+	--pink: #FF919D;
+	--glass: rgba(255, 255, 255, 0.54);
+	--boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+	--smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+	--activeItem: #f799a354;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(169, 169, 169, 0);
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(#fca71fa5, #ff919ead);
+	border-radius: 20px;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+	/* padding: 0.5rem 3.5rem; */
+	color: var(--black);
+	background: linear-gradient(106.37deg,
+			#ffe1bc 29.63%,
+			#ffcfd1 51.55%,
+			#f3c6f1 90.85%);
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AppGlass {
+	display: grid;
+	height: 97vh;
+	width: 97%;
+	background: var(--glass);
+	border-radius: 2rem;
+	gap: 16px;
+	grid-template-columns: 11rem auto;
+	overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pageContainer {
+	width: auto;
+	height: auto;
+	padding: 20px;
+	color: #000;
+	overflow-y: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mapGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	gap: 16px;
+	row-gap: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.teamGrid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(300px, auto));
+	gap: 16px;
+	row-gap: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 1200px) {
+	.AppGlass {
+		grid-template-columns: 22% auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.AppGlass {
+		grid-template-columns: 1fr;
+	}
 }
