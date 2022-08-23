@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/media/modcheck.19747448.gif"
   },
   {
-    "revision": "6efd2abf43013bf27daf6404310f85ee",
+    "revision": "338dcfc9dcb3b5c77120f37e677ce488",
     "url": "/index.html"
   }
 ];
