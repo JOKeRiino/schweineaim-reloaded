@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/schweineaim-reloaded/precache-manifest.f21823f034823a6a6d5dfb34df9ec651.js"
+  "/schweineaim-reloaded/precache-manifest.0b807f8eec786a9e47907ba7253273b6.js"
 );
 
 workbox.clientsClaim();

@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "1c6be311125a2c2b0715",
-    "url": "/schweineaim-reloaded/static/css/main.3f68f357.chunk.css"
+    "revision": "4fe65890638cf2174858",
+    "url": "/schweineaim-reloaded/static/css/main.545cd68e.chunk.css"
   },
   {
-    "revision": "1c6be311125a2c2b0715",
-    "url": "/schweineaim-reloaded/static/js/main.1c6be311.chunk.js"
+    "revision": "4fe65890638cf2174858",
+    "url": "/schweineaim-reloaded/static/js/main.4fe65890.chunk.js"
   },
   {
-    "revision": "e9139842cd5c84dfd37c",
-    "url": "/schweineaim-reloaded/static/js/1.e9139842.chunk.js"
+    "revision": "f186c2f4083d753bf6e4",
+    "url": "/schweineaim-reloaded/static/js/1.f186c2f4.chunk.js"
   },
   {
     "revision": "3fc12476e9a799aa088d",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/schweineaim-reloaded/static/media/modcheck.19747448.gif"
   },
   {
-    "revision": "42b1e09d0d4976ef155b4b3673e76c44",
+    "revision": "97bac86deb8338188bf8f245cb137313",
     "url": "/schweineaim-reloaded/index.html"
   }
 ];
