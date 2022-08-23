@@ -1,0 +1,32 @@
+.dashPage {
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 15px;
+	margin-bottom: 15px;
+	box-shadow: 2px 2px 10px #3f3f3f5e;
+}
+
+.dashPage.clear {
+	background: rgba(62, 62, 62, 0.099);
+}
+
+.dashPage div {
+	margin: 5px 0;
+}
+
+.dashPage a {
+	margin: 0;
+}
+
+.dashPage .titlelvl {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: #555555;
+}
+
+.dashPage .finish-grid {
+	margin-top: 10px;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}
