@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "00b4554130736a42d90c",
-    "url": "/schweineaim-reloaded/static/css/main.bb1492b1.chunk.css"
+    "revision": "1c6be311125a2c2b0715",
+    "url": "/schweineaim-reloaded/static/css/main.3f68f357.chunk.css"
   },
   {
-    "revision": "00b4554130736a42d90c",
-    "url": "/schweineaim-reloaded/static/js/main.00b45541.chunk.js"
+    "revision": "1c6be311125a2c2b0715",
+    "url": "/schweineaim-reloaded/static/js/main.1c6be311.chunk.js"
   },
   {
-    "revision": "b860988c9c4c442b3557",
-    "url": "/schweineaim-reloaded/static/js/1.b860988c.chunk.js"
+    "revision": "e9139842cd5c84dfd37c",
+    "url": "/schweineaim-reloaded/static/js/1.e9139842.chunk.js"
   },
   {
     "revision": "3fc12476e9a799aa088d",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/schweineaim-reloaded/static/media/smith.edff82dd.webp"
   },
   {
-    "revision": "6f479a8ee6f0fab38cc8cdafea38f696",
-    "url": "/schweineaim-reloaded/static/media/logo.6f479a8e.webp"
+    "revision": "6d3fad52f95701d780644cfbe93b0d6a",
+    "url": "/schweineaim-reloaded/static/media/logo.6d3fad52.webp"
   },
   {
     "revision": "9f9bf257fbe71ce5442575bc2b96d892",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/schweineaim-reloaded/static/media/modcheck.19747448.gif"
   },
   {
-    "revision": "87cafa6dc558df049f7ae922d7a4d085",
+    "revision": "42b1e09d0d4976ef155b4b3673e76c44",
     "url": "/schweineaim-reloaded/index.html"
   }
 ];
