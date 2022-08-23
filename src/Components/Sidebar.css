@@ -13,14 +13,13 @@
 
 .logo {
 	display: flex;
-	height: 5rem;
+	height: 4rem;
 	align-items: center;
 	justify-content: center;
-	height: 2%;
 }
 
 .logo>img {
-	width: 10rem;
+	width: 9rem;
 	height: auto;
 }
 

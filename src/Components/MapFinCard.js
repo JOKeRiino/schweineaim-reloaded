@@ -5,8 +5,7 @@ import { UilVideo } from "@iconscout/react-unicons";
 
 import './MapFinCard.css';
 
-const MapFinCard = ({ map, onPlayClip }) => {
-
+const MapFinCard = ({ map, clip, onPlayClip }) => {
 	const getDif = (difficulty) => {
 		switch (difficulty) {
 			case 0:
@@ -39,7 +38,7 @@ const MapFinCard = ({ map, onPlayClip }) => {
 				<div className={"maplvl dif" + map.map_dif}>
 					LVL: {getDif(map.map_dif)}
 				</div>
-				{map.map_clip && <div className="clipLinkFlex" onClick={() => onPlayClip(map)}><UilVideo /><span>Play Clip!</span></div>}
+				{clip !== "" ? <div className="clipLinkFlex" onClick={() => onPlayClip(map)}><UilVideo /><span>Play Clip!</span></div> : ""}
 			</Tilt >
 		</div >
 	)

@@ -7,7 +7,7 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<CookieConsentProvider>
-		<BrowserRouter>
+		<BrowserRouter basename="/schweineaim-reloaded">
 			<App />
 		</BrowserRouter>
 	</CookieConsentProvider>

@@ -12,7 +12,7 @@ const Countdown = () => {
 	const mm = useRef(null);
 	const ss = useRef(null);
 
-	const countDownDate = new Date("Sept 20,2022 ").getTime();
+	const countDownDate = new Date("Sept 18,2022 ").getTime();
 
 	useEffect(() => {
 		//startTimer();

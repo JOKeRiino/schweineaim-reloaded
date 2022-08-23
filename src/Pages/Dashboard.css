@@ -30,3 +30,15 @@
 	gap: 10px;
 	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 }
+
+.alpha {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	color: #555555;
+}
+
+.alpha div {
+	margin-left: 10px;
+}

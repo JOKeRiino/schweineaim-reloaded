@@ -4,7 +4,7 @@ import '../App.css';
 import '../Pages/Dashboard.css';
 import Countdown from "../Components/Countdown";
 import MapCard from "../Components/MapCard";
-import { UilAward } from "@iconscout/react-unicons";
+import { UilAward, UilExclamationTriangle } from "@iconscout/react-unicons";
 import { finishUrl, mapsUrl } from '../api.config';
 import Loader from "../Components/Loader";
 
@@ -59,6 +59,9 @@ const Dashboard = () => {
 					<div className="finish-grid">{renderMaps()}</div>
 				</div> : <Loader />
 			}
+			<div className="dashPage clear">
+				<div className="alpha"><UilExclamationTriangle /><div>Achtung, Alpha-Version! Bugs dürft ihr behalten! Mehr Features kommen! Kackyge Grüße vom Strand - 💜 Riino</div></div>
+			</div>
 		</div>
 	)
 }

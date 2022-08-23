@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion/dist/framer-motion";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import { SidebarData } from "../Data/Data";
 
@@ -30,9 +30,9 @@ const Sidebar = () => {
 				animate={window.innerWidth <= 768 ? `${expanded}` : ''}
 			>
 				{/* logo */}
-				<div className="logo">
+				<Link to="" className="logo">
 					<img src={Logo} alt="logo" />
-				</div>
+				</Link>
 
 				<div className="menu">
 					{SidebarData.map((item, index) => {

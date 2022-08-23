@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Sidebar from './Components/Sidebar';
 import CookieBanner from './Components/CookieBanner';
+import CookiePolicy from './Components/CookiePolicy';
 import Footer from './Components/Footer';
 import Analytics from './Pages/Analytics';
 import Dashboard from './Pages/Dashboard';
@@ -23,6 +24,7 @@ function App() {
 					<Route path="/maps" element={<Maps />} />
 					<Route path="/analytics" element={<Analytics />} />
 					<Route path="/maps/:id" element={<Map />} />
+					<Route path="/cookie-policy" element={<CookiePolicy />} />
 				</Routes>
 			</div>
 			<Footer />

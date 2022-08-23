@@ -46,7 +46,7 @@ const MemberPage = () => {
 		return playerData.map((finish, index) => {
 			const currMap = mapData.find(x => x.map_id === finish.map);
 			return (
-				<MapFinCard map={currMap} key={index} onPlayClip={onPlayClip}></MapFinCard>
+				<MapFinCard map={currMap} clip={finish.clip} key={index} onPlayClip={onPlayClip}></MapFinCard>
 			)
 		})
 	}
