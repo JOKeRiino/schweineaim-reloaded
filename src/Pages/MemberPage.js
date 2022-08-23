@@ -82,9 +82,9 @@ const MemberPage = () => {
 					<div className="titlelvl"><UilAward /> Finished by {name}:</div>
 					{playerData.length > 0 ? <div className="finish-grid">{renderFins()}</div> : "No finishes to display."}
 				</div>
-				<div className="memberPage">
+				{/* <div className="memberPage">
 					<NotYetFinished playerFins={playerData} maps={mapData} />
-				</div>
+				</div> */}
 				{modalOpen && <Modal setOpenModal={setModalOpen} clip={modalClip} />}
 			</div>
 		)
