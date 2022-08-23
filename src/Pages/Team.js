@@ -2,6 +2,15 @@ import React from "react";
 import "../App.css";
 import { TeamData } from "../Data/Data";
 import Member from "../Components/Member";
+import riinoPic from "../imgs/riino.webp";
+
+
+const riino = {
+	img: riinoPic,
+	name: "Riino (Developer)",
+	twitch: "",
+	twitter: "https://twitter.com/riino_dev",
+}
 
 const Team = () => {
 
@@ -14,6 +23,8 @@ const Team = () => {
 					})
 				}
 			</div>
+			<hr></hr>
+			<Member member={riino} />
 		</div>
 	)
 }

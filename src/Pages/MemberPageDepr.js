@@ -29,6 +29,20 @@ const MemberPage = () => {
 			});
 	}, [name]);
 
+	const onPlayClip = (clip) => {
+		setModalOpen(true);
+		setModalClip(clip);
+	}
+
+	const renderFins = () => {
+		return playerData.map((finish, index) => {
+			const currMap = mapData.find(x => x.map_id === finish.map);
+			return (
+				<MapFinCard map={currMap} clip={finish.clip} key={"fin" + index} index={index} onPlayClip={onPlayClip}></MapFinCard>
+			)
+		})
+	}
+
 	const getMedal = () => {
 		if (playerData.length >= 10 && playerData.length < 25)
 			return <div className="txt plastic"><UilAward /> Current medal: Plastic</div>
@@ -41,21 +55,6 @@ const MemberPage = () => {
 		else if (playerData.length >= 75)
 			return <div className="txt kacky"><UilAward /> Current medal: Kacky</div>
 		else return <div className="txt nomedal"><UilAward /> Current medal: No medal yet</div>
-	}
-	const renderFins = () => {
-		return playerData.map((finish, index) => {
-			const currMap = mapData.find(x => x.map_id === finish.map);
-			return (
-				<MapFinCard map={currMap} key={index} onPlayClip={onPlayClip}></MapFinCard>
-			)
-		})
-	}
-
-	const onPlayClip = (map) => {
-		let modalClip = playerData.find(x => x.map === map.map_id).clip;
-		console.log(modalClip);
-		setModalClip(modalClip);
-		setModalOpen(true);
 	}
 
 	if (name && name.toLowerCase().includes("riino")) {
@@ -73,6 +72,14 @@ const MemberPage = () => {
 		return (
 			<div className="pageContainer">
 				<div className="memberPage">
+					<button
+						className="openModalBtn"
+						onClick={() => {
+							setModalOpen(true);
+						}}
+					>
+						Open
+					</button>
 					<Link to="/team"><UilArrowLeft />Back to Team</Link>
 					<div className="title txt"><UilUserCircle />{name}</div>
 					<div className="txt"><UilMap />Maps finished: {playerData.length}/75</div>
@@ -85,6 +92,7 @@ const MemberPage = () => {
 				<div className="memberPage">
 					<NotYetFinished playerFins={playerData} maps={mapData} />
 				</div>
+
 				{modalOpen && <Modal setOpenModal={setModalOpen} clip={modalClip} />}
 			</div>
 		)

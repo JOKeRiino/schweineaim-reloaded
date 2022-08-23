@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { SidebarData } from "../Data/Data";
 
 import "./Sidebar.css";
-import Logo from "../imgs/logo.png";
+import Logo from "../imgs/logo.webp";
 
 const Sidebar = () => {
 	const [expanded, setExpaned] = useState(true)

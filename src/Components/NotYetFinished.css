@@ -1,0 +1,38 @@
+.map-flex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: 5px;
+}
+
+.map-flex a {
+	padding: 5px 10px;
+	margin: 3px 5px;
+	border-radius: 15px;
+	color: #fff;
+	font-weight: 700;
+	opacity: .8;
+	text-decoration: none;
+}
+
+.map-flex a.dif1 {
+	background-color: rgb(93, 200, 35);
+}
+
+.map-flex a.dif2 {
+	background-color: orange;
+}
+
+.map-flex a.dif3 {
+	background-color: red;
+}
+
+.map-flex a.dif4 {
+	background-color: rgb(255, 38, 255);
+}
+
+.map-flex a.dif5 {
+	background-color: #3f3f3f;
+}

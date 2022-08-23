@@ -82,10 +82,4 @@ export const TeamData = [
 		twitch: "",
 		twitter: "https://twitter.com/na1lik",
 	},
-	{
-		img: trilluxePic,
-		name: "Riino",
-		twitch: "",
-		twitter: "https://twitter.com/riino_dev",
-	},
 ];

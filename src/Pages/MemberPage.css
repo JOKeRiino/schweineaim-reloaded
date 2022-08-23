@@ -1,0 +1,89 @@
+.memberPage {
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 15px;
+	margin-bottom: 15px;
+	box-shadow: 2px 2px 10px #3f3f3f5e;
+}
+
+.memberPage.clear {
+	background: rgba(62, 62, 62, 0.099);
+}
+
+.memberPage a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.memberPage .txt {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 1.4rem;
+	margin: 5px 0;
+}
+
+.memberPage .txt svg {
+	height: 1.4rem;
+	width: 1.4rem;
+	margin-right: 10px;
+}
+
+.memberPage .title {
+	font-size: 2.2rem;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.memberPage .title svg {
+	height: 2.2rem;
+	width: 2.2rem;
+	margin-right: 10px;
+}
+
+.txt.plastic {
+	color: rgb(80, 170, 80);
+	text-shadow: 0px 0px 10px rgb(80, 170, 80);
+}
+
+.txt.bronze {
+	color: rgb(174, 87, 12);
+	text-shadow: 0px 0px 5px rgb(174, 87, 12);
+}
+
+.txt.silver {
+	color: silver;
+	text-shadow: 0px 0px 5px silver;
+}
+
+.txt.gold {
+	color: gold;
+	text-shadow: 0px 0px 5px gold;
+}
+
+.txt.kacky {
+	color: rgb(228, 21, 228);
+	text-shadow: 0px 0px 5px rgb(228, 21, 228);
+}
+
+.txt.nomedal {
+	color: #121e4c;
+	text-shadow: 0px 0px 5px #b0fbff;
+}
+
+.memberPage .titlelvl {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: #555555;
+}
+
+.memberPage .finish-grid {
+	margin-top: 10px;
+	display: grid;
+	gap: 16px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+}

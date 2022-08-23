@@ -26,11 +26,20 @@ const Dashboard = () => {
 	const renderMaps = () => {
 		var doneMaps = []
 
-		mapData.forEach(map => {
-			if (finData.findIndex(object => {
-				return object.map === map.map_id;
-			}) !== -1) {
-				doneMaps.push(map);
+		// mapData.forEach(map => {
+		// 	if (finData.findIndex(object => {
+		// 		return object.map === map.map_id;
+		// 	}) !== -1) {
+		// 		doneMaps.push(map);
+		// 	}
+		// })
+
+		finData.forEach(map => {
+			let mapIndex = mapData.findIndex(object => {
+				return object.map_id === map.map;
+			});
+			if (mapIndex !== -1) {
+				doneMaps.push(mapData[mapIndex]);
 			}
 		})
 
